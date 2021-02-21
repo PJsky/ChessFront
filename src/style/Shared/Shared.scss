@@ -1,0 +1,20 @@
+$main-color: #2e81f4;
+$main-color-lighter: #3a89ff;
+$main-color-disabled: #2e81f44d;
+$main-accent-color: white;
+// $main-accent-color: #242526;
+$main-text-color: #aaa;
+$main-text-color-ligher: #ccc;
+$input-color: #eee;
+$success-green: #01ac4b;
+$success-green-ligher: #00bd52;
+$reject-color: rgb(202, 65, 65);
+$reject-color-lighter: rgb(214, 77, 77);
+
+body{
+    background-color: $input-color;
+}
+
+.global__hidden{
+    visibility: hidden !important;
+}

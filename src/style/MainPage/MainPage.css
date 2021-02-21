@@ -1,0 +1,88 @@
+body {
+  background-color: #eee;
+}
+
+.global__hidden {
+  visibility: hidden !important;
+}
+
+.mainPage__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.mainPage__header button {
+  padding: 12px 0;
+  width: 90%;
+  max-width: 360px;
+  margin: 12px auto;
+  margin-top: 10px;
+  background-color: #2e81f4;
+  color: white;
+  font-weight: 800;
+  font-size: 1.1em;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+}
+
+.mainPage__header button:hover {
+  cursor: pointer;
+  background: #3a89ff;
+}
+
+.gameList {
+  background: white;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gameList .gameList__header {
+  color: white;
+  background: #2e81f4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.gameList h2 {
+  margin: 0px;
+  margin-bottom: 16px;
+}
+
+.gameList .gameItems {
+  margin-top: 30px;
+  margin-bottom: 24px;
+  overflow-y: auto;
+}
+
+.gameList__history {
+  margin-top: 70px;
+}
+/*# sourceMappingURL=MainPage.css.map */

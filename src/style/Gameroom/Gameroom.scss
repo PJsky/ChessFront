@@ -1,0 +1,72 @@
+@import "../Shared/Shared.scss";
+
+.gameroom{
+    display: flex;
+    justify-content: center;
+    margin: 3% auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 760px;
+}
+
+.chessBoard__playerOne, .chessBoard__playerTwo{
+    display: flex;
+    margin: 12px 10%;
+    justify-content: space-between;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.chessBoard__playerOne__Time, .chessBoard__playerTwo__Time{
+    padding: 1px 0;
+    min-width: 50px;
+    border: 2px solid black;
+} 
+
+.chessBoard__playerOne__Name, .chessBoard__playerTwo__Name{
+    display: flex;
+    justify-content: center;
+    line-height: 175%;
+    
+    .chessBoard__avatar{
+        margin-right: 8px;
+    }
+}
+
+.chessBoard__vicinity{
+    display: flex;
+}
+
+.chessBoard-Replay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+
+    div{
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 8px;
+    }
+
+    button{
+        padding: 14px 20px;
+        background-color: $main-color;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 0;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $main-color-lighter;
+        }
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+

@@ -1,0 +1,67 @@
+@import "../Shared/Shared.scss";
+
+.mainPage__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    // color:grey;
+    button{
+        padding: 12px 0;
+        width: 90%;
+        max-width: 360px;
+        margin: 12px auto;
+        margin-top: 10px;
+        background-color: $main-color;
+        color: $main-accent-color;
+        font-weight: 800;
+        font-size: 1.1em;
+        outline: none;
+        border: 0;
+        border-radius: 5px;
+
+        &:hover{
+            cursor: pointer;
+            background: $main-color-lighter;
+        }
+    }
+}
+
+.gameList{
+    background: $main-accent-color;
+    min-width: fit-content;
+    max-width: 500px;
+    max-height: 500px;
+    // padding: 24px 48px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .gameList__header{
+        color: white;
+        background: $main-color;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    h2{
+        margin: 0px;
+        margin-bottom: 16px;
+    }
+    .gameItems{
+        margin-top: 30px;
+        margin-bottom: 24px;
+        overflow-y: auto;
+        // max-width: 390px;
+    }
+
+}
+
+.gameList__history{
+    margin-top: 70px;
+}

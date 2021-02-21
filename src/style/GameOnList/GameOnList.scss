@@ -1,0 +1,40 @@
+@import "../Shared/Shared.scss";
+
+.gameItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1px auto;
+    background-color: $input-color;
+    width: 90%;
+    max-width: 380px;
+    min-width: 280px;
+    border: 1px solid $main-text-color-ligher;
+    padding: 6px;
+    box-shadow: 0 5px 8px -9px rgba(0,0,0,0.75);
+
+    &:hover{
+        cursor: pointer;
+        background-color: $main-text-color-ligher;
+    }
+}
+.gameItem__gameID, .gameItem__playerWhite, .gameItem__playerBlack{
+    width: 33%;
+}
+
+
+.gameItem__upper{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 6px;
+}
+
+.gameItem__lower{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gameItem__time{
+    color: #0009;
+    font-size: 0.7em;
+}

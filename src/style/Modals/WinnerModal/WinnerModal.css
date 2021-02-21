@@ -1,0 +1,64 @@
+body {
+  background-color: #eee;
+}
+
+.global__hidden {
+  visibility: hidden !important;
+}
+
+.winnerModal__name {
+  display: block;
+  padding: 48px 48px 24px 48px;
+  font-size: 1.2em;
+}
+
+.winnerModal__quit {
+  background-color: #ca4141;
+  color: white;
+}
+
+.winnerModal__quit:hover {
+  cursor: pointer;
+  background-color: #d64d4d;
+}
+
+.winnerModal__quit:focus {
+  outline: none;
+}
+
+.winnerModal__rewatch {
+  background-color: #2e81f4;
+  color: white;
+}
+
+.winnerModal__rewatch:hover {
+  cursor: pointer;
+  background-color: #3a89ff;
+}
+
+.winnerModal__rewatch:focus {
+  outline: none;
+}
+
+.winnerModal__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 24px 48px 24px;
+}
+
+.winnerModal__buttons button {
+  border: none;
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-style: bold;
+  font-size: 1.1em;
+}
+
+.winnerModal__winner {
+  font-weight: bold;
+}
+/*# sourceMappingURL=WinnerModal.css.map */

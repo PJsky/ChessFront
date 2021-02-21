@@ -1,0 +1,140 @@
+body {
+  background-color: #eee;
+}
+
+.global__hidden {
+  visibility: hidden !important;
+}
+
+.loginPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 240px;
+  width: 40%;
+  max-width: 340px;
+  margin: 40px auto;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.loginPage * {
+  outline: none;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.loginPage button {
+  border: none;
+  padding: 12px 8px;
+  border-radius: 5px;
+  font-style: bold;
+  font-size: 1.2em;
+}
+
+.loginPage button:hover {
+  cursor: pointer;
+}
+
+.loginPage hr {
+  width: 100%;
+  border-top: 0px solid #eee;
+}
+
+.loginPage > .loginPage__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 160px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.loginPage > .loginPage__input input {
+  padding: 12px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loginPage > .loginPage__input input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.loginPage > .loginPage__input input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.loginPage > .loginPage__input input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.loginPage > .loginPage__input input::placeholder {
+  color: #ccc;
+}
+
+.loginPage > .loginPage__input input:focus {
+  padding: 11px 8px;
+  border: 2px solid black;
+}
+
+.loginPage > .loginPage__input button {
+  background-color: #2e81f4;
+  color: white;
+}
+
+.loginPage > .loginPage__input button:hover {
+  background-color: #3a89ff;
+}
+
+.loginPage > .loginPage__input .loginPage__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginPage__forgotten {
+  color: #2e81f4;
+  margin-top: 8px;
+}
+
+.loginPage__forgotten:hover {
+  cursor: pointer;
+  color: #3a89ff;
+}
+
+.loginPage__CreateButton {
+  color: white;
+  background-color: #01ac4b;
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
+.loginPage__CreateButton:hover {
+  background-color: #00bd52;
+}
+
+.loginPage__CreateButton, .loginPage__input {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+/*# sourceMappingURL=LoginPage.css.map */

@@ -1,0 +1,119 @@
+body {
+  background-color: #eee;
+}
+
+.global__hidden {
+  visibility: hidden !important;
+}
+
+.historyFeed__space {
+  height: 0;
+  margin: 0;
+  margin-top: 70px;
+}
+
+.historyFeed__card {
+  background: white;
+  min-width: 200px;
+  min-height: 100px;
+  max-width: 350px;
+  max-height: 400px;
+  padding: 16px 32px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
+  margin: 24px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.historyFeed__card__upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 8px 0;
+  border-bottom: 1px solid #0002;
+}
+
+.historyFeed__playerOne, .historyFeed__playerTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.1em;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.historyFeed__playerOne__name, .historyFeed__playerTwo__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  padding-bottom: 16px;
+}
+
+.historyFeed__card__lower {
+  padding-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.historyFeed__card__lower button {
+  border: none;
+  padding: 8px 0;
+  border-radius: 5px;
+  font-style: bold;
+  font-size: 1.1em;
+  margin-right: 5%;
+  width: 40%;
+  background-color: #2e81f4;
+  color: white;
+}
+
+.historyFeed__card__lower button:hover {
+  cursor: pointer;
+  background-color: #3a89ff;
+}
+
+.historyFeed__card__lower button:focus {
+  outline: none;
+}
+
+.historyFeed__date {
+  margin-left: 8%;
+  text-align: left;
+  font-size: 0.7em;
+}
+
+.historyFeed__button--disabled {
+  background: #2e81f44d !important;
+}
+
+.historyFeed__winner {
+  color: #2e81f4;
+  font-weight: bold;
+}
+/*# sourceMappingURL=HistoryFeed.css.map */

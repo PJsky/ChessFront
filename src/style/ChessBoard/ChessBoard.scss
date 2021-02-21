@@ -1,0 +1,229 @@
+.chessBoard-Container{
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#chessBoard{
+    height: 0;
+    // padding-bottom: 100%;
+    padding-bottom: #{"min(760px, 100%)"}; 
+    width: 100%;
+    max-width: 760px;
+    background-image: url("./images/cboard.png");
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 3px;
+    margin: auto;
+}
+
+.chessBoard--reverse{
+    transform: rotate(180deg);
+}
+
+.chessPiece{
+    //top: 0;
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 3px;
+}
+
+.highlighted-position{
+    background-color: #444aa488 !important;
+}
+.lastmove-highlighted-position{
+    background-color: #cfcf1188; 
+}
+
+.wp{
+    background-image: url("./images/chessPieces/wp.png");
+}
+
+.bp{
+    background-image: url("./images/chessPieces/bp.png");
+}
+.wr{
+    background-image: url("./images/chessPieces/wr.png");
+}
+.br{
+    background-image: url("./images/chessPieces/br.png");
+}
+.wn{
+    background-image: url("./images/chessPieces/wn.png");
+}
+.bn{
+    background-image: url("./images/chessPieces/bn.png");
+}
+.wb{
+    background-image: url("./images/chessPieces/wb.png");
+}
+.bb{
+    background-image: url("./images/chessPieces/bb.png");
+}
+.wq{
+    background-image: url("./images/chessPieces/wq.png");
+}
+.bq{
+    background-image: url("./images/chessPieces/bq.png");
+}
+.wk{
+    background-image: url("./images/chessPieces/wk.png");
+}
+.bk{
+    background-image: url("./images/chessPieces/bk.png");
+}
+.wr, .wn, .wb, .wq, .wk, .wp, .br, .bn, .bb, .bq, .bk, .bp{
+    &:active{
+        background-color: #00000000;
+    }
+}
+
+.cpPositon11{    transform: translate(0%,700%);}
+.cpPositon12{    transform: translate(0%,600%);}
+.cpPositon13{    transform: translate(0%,500%);}
+.cpPositon14{    transform: translate(0%,400%);}
+.cpPositon15{    transform: translate(0%,300%);}
+.cpPositon16{    transform: translate(0%,200%);}
+.cpPositon17{    transform: translate(0%,100%);}
+.cpPositon18{    transform: translate(0%,0%);}
+
+.cpPositon21{    transform: translate(100%,700%);}
+.cpPositon22{    transform: translate(100%,600%);}
+.cpPositon23{    transform: translate(100%,500%);}
+.cpPositon24{    transform: translate(100%,400%);}
+.cpPositon25{    transform: translate(100%,300%);}
+.cpPositon26{    transform: translate(100%,200%);}
+.cpPositon27{    transform: translate(100%,100%);}
+.cpPositon28{    transform: translate(100%,0%);}
+
+.cpPositon31{    transform: translate(200%,700%);}
+.cpPositon32{    transform: translate(200%,600%);}
+.cpPositon33{    transform: translate(200%,500%);}
+.cpPositon34{    transform: translate(200%,400%);}
+.cpPositon35{    transform: translate(200%,300%);}
+.cpPositon36{    transform: translate(200%,200%);}
+.cpPositon37{    transform: translate(200%,100%);}
+.cpPositon38{    transform: translate(200%,0%);}
+
+.cpPositon41{    transform: translate(300%,700%);}
+.cpPositon42{    transform: translate(300%,600%);}
+.cpPositon43{    transform: translate(300%,500%);}
+.cpPositon44{    transform: translate(300%,400%);}
+.cpPositon45{    transform: translate(300%,300%);}
+.cpPositon46{    transform: translate(300%,200%);}
+.cpPositon47{    transform: translate(300%,100%);}
+.cpPositon48{    transform: translate(300%,0%);}
+
+.cpPositon51{    transform: translate(400%,700%);}
+.cpPositon52{    transform: translate(400%,600%);}
+.cpPositon53{    transform: translate(400%,500%);}
+.cpPositon54{    transform: translate(400%,400%);}
+.cpPositon55{    transform: translate(400%,300%);}
+.cpPositon56{    transform: translate(400%,200%);}
+.cpPositon57{    transform: translate(400%,100%);}
+.cpPositon58{    transform: translate(400%,0%);}
+
+.cpPositon61{    transform: translate(500%,700%);}
+.cpPositon62{    transform: translate(500%,600%);}
+.cpPositon63{    transform: translate(500%,500%);}
+.cpPositon64{    transform: translate(500%,400%);}
+.cpPositon65{    transform: translate(500%,300%);}
+.cpPositon66{    transform: translate(500%,200%);}
+.cpPositon67{    transform: translate(500%,100%);}
+.cpPositon68{    transform: translate(500%,0%);}
+
+.cpPositon71{    transform: translate(600%,700%);}
+.cpPositon72{    transform: translate(600%,600%);}
+.cpPositon73{    transform: translate(600%,500%);}
+.cpPositon74{    transform: translate(600%,400%);}
+.cpPositon75{    transform: translate(600%,300%);}
+.cpPositon76{    transform: translate(600%,200%);}
+.cpPositon77{    transform: translate(600%,100%);}
+.cpPositon78{    transform: translate(600%,0%);}
+
+.cpPositon81{    transform: translate(700%,700%);}
+.cpPositon82{    transform: translate(700%,600%);}
+.cpPositon83{    transform: translate(700%,500%);}
+.cpPositon84{    transform: translate(700%,400%);}
+.cpPositon85{    transform: translate(700%,300%);}
+.cpPositon86{    transform: translate(700%,200%);}
+.cpPositon87{    transform: translate(700%,100%);}
+.cpPositon88{    transform: translate(700%,0%);}
+
+.cpPositon12--reverse{    transform: translate(0%,600%) rotate(180deg);}
+.cpPositon11--reverse{    transform: translate(0%,700%) rotate(180deg);}
+.cpPositon13--reverse{    transform: translate(0%,500%) rotate(180deg);}
+.cpPositon14--reverse{    transform: translate(0%,400%) rotate(180deg);}
+.cpPositon15--reverse{    transform: translate(0%,300%) rotate(180deg);}
+.cpPositon16--reverse{    transform: translate(0%,200%) rotate(180deg);}
+.cpPositon17--reverse{    transform: translate(0%,100%) rotate(180deg);}
+.cpPositon18--reverse{    transform: translate(0%,0%) rotate(180deg);}
+
+.cpPositon21--reverse{    transform: translate(100%,700%) rotate(180deg);}
+.cpPositon22--reverse{    transform: translate(100%,600%) rotate(180deg);}
+.cpPositon23--reverse{    transform: translate(100%,500%) rotate(180deg);}
+.cpPositon24--reverse{    transform: translate(100%,400%) rotate(180deg);}
+.cpPositon25--reverse{    transform: translate(100%,300%) rotate(180deg);}
+.cpPositon26--reverse{    transform: translate(100%,200%) rotate(180deg);}
+.cpPositon27--reverse{    transform: translate(100%,100%) rotate(180deg);}
+.cpPositon28--reverse{    transform: translate(100%,0%) rotate(180deg);}
+
+.cpPositon31--reverse{    transform: translate(200%,700%) rotate(180deg);}
+.cpPositon32--reverse{    transform: translate(200%,600%) rotate(180deg);}
+.cpPositon33--reverse{    transform: translate(200%,500%) rotate(180deg);}
+.cpPositon34--reverse{    transform: translate(200%,400%) rotate(180deg);}
+.cpPositon35--reverse{    transform: translate(200%,300%) rotate(180deg);}
+.cpPositon36--reverse{    transform: translate(200%,200%) rotate(180deg);}
+.cpPositon37--reverse{    transform: translate(200%,100%) rotate(180deg);}
+.cpPositon38--reverse{    transform: translate(200%,0%) rotate(180deg);}
+
+.cpPositon41--reverse{    transform: translate(300%,700%) rotate(180deg);}
+.cpPositon42--reverse{    transform: translate(300%,600%) rotate(180deg);}
+.cpPositon43--reverse{    transform: translate(300%,500%) rotate(180deg);}
+.cpPositon44--reverse{    transform: translate(300%,400%) rotate(180deg);}
+.cpPositon45--reverse{    transform: translate(300%,300%) rotate(180deg);}
+.cpPositon46--reverse{    transform: translate(300%,200%) rotate(180deg);}
+.cpPositon47--reverse{    transform: translate(300%,100%) rotate(180deg);}
+.cpPositon48--reverse{    transform: translate(300%,0%) rotate(180deg);}
+
+.cpPositon51--reverse{    transform: translate(400%,700%) rotate(180deg);}
+.cpPositon52--reverse{    transform: translate(400%,600%) rotate(180deg);}
+.cpPositon53--reverse{    transform: translate(400%,500%) rotate(180deg);}
+.cpPositon54--reverse{    transform: translate(400%,400%) rotate(180deg);}
+.cpPositon55--reverse{    transform: translate(400%,300%) rotate(180deg);}
+.cpPositon56--reverse{    transform: translate(400%,200%) rotate(180deg);}
+.cpPositon57--reverse{    transform: translate(400%,100%) rotate(180deg);}
+.cpPositon58--reverse{    transform: translate(400%,0%) rotate(180deg);}
+
+.cpPositon61--reverse{    transform: translate(500%,700%) rotate(180deg);}
+.cpPositon62--reverse{    transform: translate(500%,600%) rotate(180deg);}
+.cpPositon63--reverse{    transform: translate(500%,500%) rotate(180deg);}
+.cpPositon64--reverse{    transform: translate(500%,400%) rotate(180deg);}
+.cpPositon65--reverse{    transform: translate(500%,300%) rotate(180deg);}
+.cpPositon66--reverse{    transform: translate(500%,200%) rotate(180deg);}
+.cpPositon67--reverse{    transform: translate(500%,100%) rotate(180deg);}
+.cpPositon68--reverse{    transform: translate(500%,0%) rotate(180deg);}
+
+.cpPositon71--reverse{    transform: translate(600%,700%) rotate(180deg);}
+.cpPositon72--reverse{    transform: translate(600%,600%) rotate(180deg);}
+.cpPositon73--reverse{    transform: translate(600%,500%) rotate(180deg);}
+.cpPositon74--reverse{    transform: translate(600%,400%) rotate(180deg);}
+.cpPositon75--reverse{    transform: translate(600%,300%) rotate(180deg);}
+.cpPositon76--reverse{    transform: translate(600%,200%) rotate(180deg);}
+.cpPositon77--reverse{    transform: translate(600%,100%) rotate(180deg);}
+.cpPositon78--reverse{    transform: translate(600%,0%) rotate(180deg);}
+
+.cpPositon81--reverse{    transform: translate(700%,700%) rotate(180deg);}
+.cpPositon82--reverse{    transform: translate(700%,600%) rotate(180deg);}
+.cpPositon83--reverse{    transform: translate(700%,500%) rotate(180deg);}
+.cpPositon84--reverse{    transform: translate(700%,400%) rotate(180deg);}
+.cpPositon85--reverse{    transform: translate(700%,300%) rotate(180deg);}
+.cpPositon86--reverse{    transform: translate(700%,200%) rotate(180deg);}
+.cpPositon87--reverse{    transform: translate(700%,100%) rotate(180deg);}
+.cpPositon88--reverse{    transform: translate(700%,0%) rotate(180deg);}

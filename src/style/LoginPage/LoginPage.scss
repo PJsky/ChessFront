@@ -1,0 +1,97 @@
+@import "../Shared/Shared.scss";
+
+.loginPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 240px;
+    width: 40%;
+    max-width: 340px;
+    margin: 40px auto;
+    background-color: $main-accent-color;
+    box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    padding: 16px;
+
+    *{
+        outline: none;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    
+    button{
+        border: none;
+        padding: 12px 8px;
+        border-radius: 5px;
+        font-style: bold;
+        font-size: 1.2em;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    hr{
+        width: 100%;
+        border-top:0px solid #eee;
+    }
+}
+
+.loginPage > .loginPage__input{
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+    justify-content: space-evenly;
+
+    input{
+        padding: 12px 8px;
+        border: 1px solid $main-text-color-ligher;
+        border-radius: 5px;
+
+        &::placeholder{
+            color: $main-text-color-ligher;
+        }
+
+        &:focus{
+            padding: 11px 8px;
+            border: 2px solid black;
+        }
+    }
+    button{
+        background-color: $main-color;
+        color: $main-accent-color;
+        &:hover{
+            background-color: $main-color-lighter
+        }
+    }
+
+    .loginPage__form{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+.loginPage__forgotten{
+    color: $main-color;
+    margin-top: 8px;
+    &:hover{
+        cursor: pointer;
+        color: $main-color-lighter
+    }
+}
+
+.loginPage__CreateButton{
+    color: white;
+    background-color: $success-green;
+    display: block;
+    width: 70%;
+    margin: auto;
+    &:hover{
+        background-color: $success-green-ligher;
+    }
+}
+
+.loginPage__CreateButton, .loginPage__input{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}

@@ -1,0 +1,131 @@
+body {
+  background-color: #eee;
+}
+
+.global__hidden {
+  visibility: hidden !important;
+}
+
+.registerPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 240px;
+  width: 40%;
+  max-width: 340px;
+  margin: 40px auto;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.registerPage * {
+  outline: none;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.registerPage button {
+  border: none;
+  padding: 12px 8px;
+  border-radius: 5px;
+  font-style: bold;
+  font-size: 1.2em;
+}
+
+.registerPage button:hover {
+  cursor: pointer;
+}
+
+.registerPage hr {
+  width: 100%;
+  border-top: 0px solid #eee;
+}
+
+.registerPage > .registerPage__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 160px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.registerPage > .registerPage__input input {
+  padding: 12px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registerPage > .registerPage__input input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.registerPage > .registerPage__input input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.registerPage > .registerPage__input input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.registerPage > .registerPage__input input::placeholder {
+  color: #ccc;
+}
+
+.registerPage > .registerPage__input input:focus {
+  padding: 11px 8px;
+  border: 2px solid black;
+}
+
+.registerPage > .registerPage__input .registerPage__CreateButton {
+  color: white;
+  background-color: #01ac4b;
+  display: block;
+  width: 70%;
+  margin: 4px auto;
+}
+
+.registerPage > .registerPage__input .registerPage__CreateButton:hover {
+  background-color: #00bd52;
+}
+
+.registerPage > .registerPage__input .registerPage__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registerPage__forgotten {
+  color: #2e81f4;
+  margin-top: 8px;
+}
+
+.registerPage__forgotten:hover {
+  cursor: pointer;
+  color: #3a89ff;
+}
+
+.registerPage__input {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+/*# sourceMappingURL=RegisterPage.css.map */

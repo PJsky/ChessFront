@@ -1,0 +1,738 @@
+.chessBoard-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#chessBoard {
+  height: 0;
+  padding-bottom: min(760px, 100%);
+  width: 100%;
+  max-width: 760px;
+  background-image: url("./images/cboard.png");
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.chessBoard--reverse {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.chessPiece {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 3px;
+}
+
+.highlighted-position {
+  background-color: #444aa488 !important;
+}
+
+.lastmove-highlighted-position {
+  background-color: #cfcf1188;
+}
+
+.wp {
+  background-image: url("./images/chessPieces/wp.png");
+}
+
+.bp {
+  background-image: url("./images/chessPieces/bp.png");
+}
+
+.wr {
+  background-image: url("./images/chessPieces/wr.png");
+}
+
+.br {
+  background-image: url("./images/chessPieces/br.png");
+}
+
+.wn {
+  background-image: url("./images/chessPieces/wn.png");
+}
+
+.bn {
+  background-image: url("./images/chessPieces/bn.png");
+}
+
+.wb {
+  background-image: url("./images/chessPieces/wb.png");
+}
+
+.bb {
+  background-image: url("./images/chessPieces/bb.png");
+}
+
+.wq {
+  background-image: url("./images/chessPieces/wq.png");
+}
+
+.bq {
+  background-image: url("./images/chessPieces/bq.png");
+}
+
+.wk {
+  background-image: url("./images/chessPieces/wk.png");
+}
+
+.bk {
+  background-image: url("./images/chessPieces/bk.png");
+}
+
+.wr:active, .wn:active, .wb:active, .wq:active, .wk:active, .wp:active, .br:active, .bn:active, .bb:active, .bq:active, .bk:active, .bp:active {
+  background-color: #00000000;
+}
+
+.cpPositon11 {
+  -webkit-transform: translate(0%, 700%);
+          transform: translate(0%, 700%);
+}
+
+.cpPositon12 {
+  -webkit-transform: translate(0%, 600%);
+          transform: translate(0%, 600%);
+}
+
+.cpPositon13 {
+  -webkit-transform: translate(0%, 500%);
+          transform: translate(0%, 500%);
+}
+
+.cpPositon14 {
+  -webkit-transform: translate(0%, 400%);
+          transform: translate(0%, 400%);
+}
+
+.cpPositon15 {
+  -webkit-transform: translate(0%, 300%);
+          transform: translate(0%, 300%);
+}
+
+.cpPositon16 {
+  -webkit-transform: translate(0%, 200%);
+          transform: translate(0%, 200%);
+}
+
+.cpPositon17 {
+  -webkit-transform: translate(0%, 100%);
+          transform: translate(0%, 100%);
+}
+
+.cpPositon18 {
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+}
+
+.cpPositon21 {
+  -webkit-transform: translate(100%, 700%);
+          transform: translate(100%, 700%);
+}
+
+.cpPositon22 {
+  -webkit-transform: translate(100%, 600%);
+          transform: translate(100%, 600%);
+}
+
+.cpPositon23 {
+  -webkit-transform: translate(100%, 500%);
+          transform: translate(100%, 500%);
+}
+
+.cpPositon24 {
+  -webkit-transform: translate(100%, 400%);
+          transform: translate(100%, 400%);
+}
+
+.cpPositon25 {
+  -webkit-transform: translate(100%, 300%);
+          transform: translate(100%, 300%);
+}
+
+.cpPositon26 {
+  -webkit-transform: translate(100%, 200%);
+          transform: translate(100%, 200%);
+}
+
+.cpPositon27 {
+  -webkit-transform: translate(100%, 100%);
+          transform: translate(100%, 100%);
+}
+
+.cpPositon28 {
+  -webkit-transform: translate(100%, 0%);
+          transform: translate(100%, 0%);
+}
+
+.cpPositon31 {
+  -webkit-transform: translate(200%, 700%);
+          transform: translate(200%, 700%);
+}
+
+.cpPositon32 {
+  -webkit-transform: translate(200%, 600%);
+          transform: translate(200%, 600%);
+}
+
+.cpPositon33 {
+  -webkit-transform: translate(200%, 500%);
+          transform: translate(200%, 500%);
+}
+
+.cpPositon34 {
+  -webkit-transform: translate(200%, 400%);
+          transform: translate(200%, 400%);
+}
+
+.cpPositon35 {
+  -webkit-transform: translate(200%, 300%);
+          transform: translate(200%, 300%);
+}
+
+.cpPositon36 {
+  -webkit-transform: translate(200%, 200%);
+          transform: translate(200%, 200%);
+}
+
+.cpPositon37 {
+  -webkit-transform: translate(200%, 100%);
+          transform: translate(200%, 100%);
+}
+
+.cpPositon38 {
+  -webkit-transform: translate(200%, 0%);
+          transform: translate(200%, 0%);
+}
+
+.cpPositon41 {
+  -webkit-transform: translate(300%, 700%);
+          transform: translate(300%, 700%);
+}
+
+.cpPositon42 {
+  -webkit-transform: translate(300%, 600%);
+          transform: translate(300%, 600%);
+}
+
+.cpPositon43 {
+  -webkit-transform: translate(300%, 500%);
+          transform: translate(300%, 500%);
+}
+
+.cpPositon44 {
+  -webkit-transform: translate(300%, 400%);
+          transform: translate(300%, 400%);
+}
+
+.cpPositon45 {
+  -webkit-transform: translate(300%, 300%);
+          transform: translate(300%, 300%);
+}
+
+.cpPositon46 {
+  -webkit-transform: translate(300%, 200%);
+          transform: translate(300%, 200%);
+}
+
+.cpPositon47 {
+  -webkit-transform: translate(300%, 100%);
+          transform: translate(300%, 100%);
+}
+
+.cpPositon48 {
+  -webkit-transform: translate(300%, 0%);
+          transform: translate(300%, 0%);
+}
+
+.cpPositon51 {
+  -webkit-transform: translate(400%, 700%);
+          transform: translate(400%, 700%);
+}
+
+.cpPositon52 {
+  -webkit-transform: translate(400%, 600%);
+          transform: translate(400%, 600%);
+}
+
+.cpPositon53 {
+  -webkit-transform: translate(400%, 500%);
+          transform: translate(400%, 500%);
+}
+
+.cpPositon54 {
+  -webkit-transform: translate(400%, 400%);
+          transform: translate(400%, 400%);
+}
+
+.cpPositon55 {
+  -webkit-transform: translate(400%, 300%);
+          transform: translate(400%, 300%);
+}
+
+.cpPositon56 {
+  -webkit-transform: translate(400%, 200%);
+          transform: translate(400%, 200%);
+}
+
+.cpPositon57 {
+  -webkit-transform: translate(400%, 100%);
+          transform: translate(400%, 100%);
+}
+
+.cpPositon58 {
+  -webkit-transform: translate(400%, 0%);
+          transform: translate(400%, 0%);
+}
+
+.cpPositon61 {
+  -webkit-transform: translate(500%, 700%);
+          transform: translate(500%, 700%);
+}
+
+.cpPositon62 {
+  -webkit-transform: translate(500%, 600%);
+          transform: translate(500%, 600%);
+}
+
+.cpPositon63 {
+  -webkit-transform: translate(500%, 500%);
+          transform: translate(500%, 500%);
+}
+
+.cpPositon64 {
+  -webkit-transform: translate(500%, 400%);
+          transform: translate(500%, 400%);
+}
+
+.cpPositon65 {
+  -webkit-transform: translate(500%, 300%);
+          transform: translate(500%, 300%);
+}
+
+.cpPositon66 {
+  -webkit-transform: translate(500%, 200%);
+          transform: translate(500%, 200%);
+}
+
+.cpPositon67 {
+  -webkit-transform: translate(500%, 100%);
+          transform: translate(500%, 100%);
+}
+
+.cpPositon68 {
+  -webkit-transform: translate(500%, 0%);
+          transform: translate(500%, 0%);
+}
+
+.cpPositon71 {
+  -webkit-transform: translate(600%, 700%);
+          transform: translate(600%, 700%);
+}
+
+.cpPositon72 {
+  -webkit-transform: translate(600%, 600%);
+          transform: translate(600%, 600%);
+}
+
+.cpPositon73 {
+  -webkit-transform: translate(600%, 500%);
+          transform: translate(600%, 500%);
+}
+
+.cpPositon74 {
+  -webkit-transform: translate(600%, 400%);
+          transform: translate(600%, 400%);
+}
+
+.cpPositon75 {
+  -webkit-transform: translate(600%, 300%);
+          transform: translate(600%, 300%);
+}
+
+.cpPositon76 {
+  -webkit-transform: translate(600%, 200%);
+          transform: translate(600%, 200%);
+}
+
+.cpPositon77 {
+  -webkit-transform: translate(600%, 100%);
+          transform: translate(600%, 100%);
+}
+
+.cpPositon78 {
+  -webkit-transform: translate(600%, 0%);
+          transform: translate(600%, 0%);
+}
+
+.cpPositon81 {
+  -webkit-transform: translate(700%, 700%);
+          transform: translate(700%, 700%);
+}
+
+.cpPositon82 {
+  -webkit-transform: translate(700%, 600%);
+          transform: translate(700%, 600%);
+}
+
+.cpPositon83 {
+  -webkit-transform: translate(700%, 500%);
+          transform: translate(700%, 500%);
+}
+
+.cpPositon84 {
+  -webkit-transform: translate(700%, 400%);
+          transform: translate(700%, 400%);
+}
+
+.cpPositon85 {
+  -webkit-transform: translate(700%, 300%);
+          transform: translate(700%, 300%);
+}
+
+.cpPositon86 {
+  -webkit-transform: translate(700%, 200%);
+          transform: translate(700%, 200%);
+}
+
+.cpPositon87 {
+  -webkit-transform: translate(700%, 100%);
+          transform: translate(700%, 100%);
+}
+
+.cpPositon88 {
+  -webkit-transform: translate(700%, 0%);
+          transform: translate(700%, 0%);
+}
+
+.cpPositon12--reverse {
+  -webkit-transform: translate(0%, 600%) rotate(180deg);
+          transform: translate(0%, 600%) rotate(180deg);
+}
+
+.cpPositon11--reverse {
+  -webkit-transform: translate(0%, 700%) rotate(180deg);
+          transform: translate(0%, 700%) rotate(180deg);
+}
+
+.cpPositon13--reverse {
+  -webkit-transform: translate(0%, 500%) rotate(180deg);
+          transform: translate(0%, 500%) rotate(180deg);
+}
+
+.cpPositon14--reverse {
+  -webkit-transform: translate(0%, 400%) rotate(180deg);
+          transform: translate(0%, 400%) rotate(180deg);
+}
+
+.cpPositon15--reverse {
+  -webkit-transform: translate(0%, 300%) rotate(180deg);
+          transform: translate(0%, 300%) rotate(180deg);
+}
+
+.cpPositon16--reverse {
+  -webkit-transform: translate(0%, 200%) rotate(180deg);
+          transform: translate(0%, 200%) rotate(180deg);
+}
+
+.cpPositon17--reverse {
+  -webkit-transform: translate(0%, 100%) rotate(180deg);
+          transform: translate(0%, 100%) rotate(180deg);
+}
+
+.cpPositon18--reverse {
+  -webkit-transform: translate(0%, 0%) rotate(180deg);
+          transform: translate(0%, 0%) rotate(180deg);
+}
+
+.cpPositon21--reverse {
+  -webkit-transform: translate(100%, 700%) rotate(180deg);
+          transform: translate(100%, 700%) rotate(180deg);
+}
+
+.cpPositon22--reverse {
+  -webkit-transform: translate(100%, 600%) rotate(180deg);
+          transform: translate(100%, 600%) rotate(180deg);
+}
+
+.cpPositon23--reverse {
+  -webkit-transform: translate(100%, 500%) rotate(180deg);
+          transform: translate(100%, 500%) rotate(180deg);
+}
+
+.cpPositon24--reverse {
+  -webkit-transform: translate(100%, 400%) rotate(180deg);
+          transform: translate(100%, 400%) rotate(180deg);
+}
+
+.cpPositon25--reverse {
+  -webkit-transform: translate(100%, 300%) rotate(180deg);
+          transform: translate(100%, 300%) rotate(180deg);
+}
+
+.cpPositon26--reverse {
+  -webkit-transform: translate(100%, 200%) rotate(180deg);
+          transform: translate(100%, 200%) rotate(180deg);
+}
+
+.cpPositon27--reverse {
+  -webkit-transform: translate(100%, 100%) rotate(180deg);
+          transform: translate(100%, 100%) rotate(180deg);
+}
+
+.cpPositon28--reverse {
+  -webkit-transform: translate(100%, 0%) rotate(180deg);
+          transform: translate(100%, 0%) rotate(180deg);
+}
+
+.cpPositon31--reverse {
+  -webkit-transform: translate(200%, 700%) rotate(180deg);
+          transform: translate(200%, 700%) rotate(180deg);
+}
+
+.cpPositon32--reverse {
+  -webkit-transform: translate(200%, 600%) rotate(180deg);
+          transform: translate(200%, 600%) rotate(180deg);
+}
+
+.cpPositon33--reverse {
+  -webkit-transform: translate(200%, 500%) rotate(180deg);
+          transform: translate(200%, 500%) rotate(180deg);
+}
+
+.cpPositon34--reverse {
+  -webkit-transform: translate(200%, 400%) rotate(180deg);
+          transform: translate(200%, 400%) rotate(180deg);
+}
+
+.cpPositon35--reverse {
+  -webkit-transform: translate(200%, 300%) rotate(180deg);
+          transform: translate(200%, 300%) rotate(180deg);
+}
+
+.cpPositon36--reverse {
+  -webkit-transform: translate(200%, 200%) rotate(180deg);
+          transform: translate(200%, 200%) rotate(180deg);
+}
+
+.cpPositon37--reverse {
+  -webkit-transform: translate(200%, 100%) rotate(180deg);
+          transform: translate(200%, 100%) rotate(180deg);
+}
+
+.cpPositon38--reverse {
+  -webkit-transform: translate(200%, 0%) rotate(180deg);
+          transform: translate(200%, 0%) rotate(180deg);
+}
+
+.cpPositon41--reverse {
+  -webkit-transform: translate(300%, 700%) rotate(180deg);
+          transform: translate(300%, 700%) rotate(180deg);
+}
+
+.cpPositon42--reverse {
+  -webkit-transform: translate(300%, 600%) rotate(180deg);
+          transform: translate(300%, 600%) rotate(180deg);
+}
+
+.cpPositon43--reverse {
+  -webkit-transform: translate(300%, 500%) rotate(180deg);
+          transform: translate(300%, 500%) rotate(180deg);
+}
+
+.cpPositon44--reverse {
+  -webkit-transform: translate(300%, 400%) rotate(180deg);
+          transform: translate(300%, 400%) rotate(180deg);
+}
+
+.cpPositon45--reverse {
+  -webkit-transform: translate(300%, 300%) rotate(180deg);
+          transform: translate(300%, 300%) rotate(180deg);
+}
+
+.cpPositon46--reverse {
+  -webkit-transform: translate(300%, 200%) rotate(180deg);
+          transform: translate(300%, 200%) rotate(180deg);
+}
+
+.cpPositon47--reverse {
+  -webkit-transform: translate(300%, 100%) rotate(180deg);
+          transform: translate(300%, 100%) rotate(180deg);
+}
+
+.cpPositon48--reverse {
+  -webkit-transform: translate(300%, 0%) rotate(180deg);
+          transform: translate(300%, 0%) rotate(180deg);
+}
+
+.cpPositon51--reverse {
+  -webkit-transform: translate(400%, 700%) rotate(180deg);
+          transform: translate(400%, 700%) rotate(180deg);
+}
+
+.cpPositon52--reverse {
+  -webkit-transform: translate(400%, 600%) rotate(180deg);
+          transform: translate(400%, 600%) rotate(180deg);
+}
+
+.cpPositon53--reverse {
+  -webkit-transform: translate(400%, 500%) rotate(180deg);
+          transform: translate(400%, 500%) rotate(180deg);
+}
+
+.cpPositon54--reverse {
+  -webkit-transform: translate(400%, 400%) rotate(180deg);
+          transform: translate(400%, 400%) rotate(180deg);
+}
+
+.cpPositon55--reverse {
+  -webkit-transform: translate(400%, 300%) rotate(180deg);
+          transform: translate(400%, 300%) rotate(180deg);
+}
+
+.cpPositon56--reverse {
+  -webkit-transform: translate(400%, 200%) rotate(180deg);
+          transform: translate(400%, 200%) rotate(180deg);
+}
+
+.cpPositon57--reverse {
+  -webkit-transform: translate(400%, 100%) rotate(180deg);
+          transform: translate(400%, 100%) rotate(180deg);
+}
+
+.cpPositon58--reverse {
+  -webkit-transform: translate(400%, 0%) rotate(180deg);
+          transform: translate(400%, 0%) rotate(180deg);
+}
+
+.cpPositon61--reverse {
+  -webkit-transform: translate(500%, 700%) rotate(180deg);
+          transform: translate(500%, 700%) rotate(180deg);
+}
+
+.cpPositon62--reverse {
+  -webkit-transform: translate(500%, 600%) rotate(180deg);
+          transform: translate(500%, 600%) rotate(180deg);
+}
+
+.cpPositon63--reverse {
+  -webkit-transform: translate(500%, 500%) rotate(180deg);
+          transform: translate(500%, 500%) rotate(180deg);
+}
+
+.cpPositon64--reverse {
+  -webkit-transform: translate(500%, 400%) rotate(180deg);
+          transform: translate(500%, 400%) rotate(180deg);
+}
+
+.cpPositon65--reverse {
+  -webkit-transform: translate(500%, 300%) rotate(180deg);
+          transform: translate(500%, 300%) rotate(180deg);
+}
+
+.cpPositon66--reverse {
+  -webkit-transform: translate(500%, 200%) rotate(180deg);
+          transform: translate(500%, 200%) rotate(180deg);
+}
+
+.cpPositon67--reverse {
+  -webkit-transform: translate(500%, 100%) rotate(180deg);
+          transform: translate(500%, 100%) rotate(180deg);
+}
+
+.cpPositon68--reverse {
+  -webkit-transform: translate(500%, 0%) rotate(180deg);
+          transform: translate(500%, 0%) rotate(180deg);
+}
+
+.cpPositon71--reverse {
+  -webkit-transform: translate(600%, 700%) rotate(180deg);
+          transform: translate(600%, 700%) rotate(180deg);
+}
+
+.cpPositon72--reverse {
+  -webkit-transform: translate(600%, 600%) rotate(180deg);
+          transform: translate(600%, 600%) rotate(180deg);
+}
+
+.cpPositon73--reverse {
+  -webkit-transform: translate(600%, 500%) rotate(180deg);
+          transform: translate(600%, 500%) rotate(180deg);
+}
+
+.cpPositon74--reverse {
+  -webkit-transform: translate(600%, 400%) rotate(180deg);
+          transform: translate(600%, 400%) rotate(180deg);
+}
+
+.cpPositon75--reverse {
+  -webkit-transform: translate(600%, 300%) rotate(180deg);
+          transform: translate(600%, 300%) rotate(180deg);
+}
+
+.cpPositon76--reverse {
+  -webkit-transform: translate(600%, 200%) rotate(180deg);
+          transform: translate(600%, 200%) rotate(180deg);
+}
+
+.cpPositon77--reverse {
+  -webkit-transform: translate(600%, 100%) rotate(180deg);
+          transform: translate(600%, 100%) rotate(180deg);
+}
+
+.cpPositon78--reverse {
+  -webkit-transform: translate(600%, 0%) rotate(180deg);
+          transform: translate(600%, 0%) rotate(180deg);
+}
+
+.cpPositon81--reverse {
+  -webkit-transform: translate(700%, 700%) rotate(180deg);
+          transform: translate(700%, 700%) rotate(180deg);
+}
+
+.cpPositon82--reverse {
+  -webkit-transform: translate(700%, 600%) rotate(180deg);
+          transform: translate(700%, 600%) rotate(180deg);
+}
+
+.cpPositon83--reverse {
+  -webkit-transform: translate(700%, 500%) rotate(180deg);
+          transform: translate(700%, 500%) rotate(180deg);
+}
+
+.cpPositon84--reverse {
+  -webkit-transform: translate(700%, 400%) rotate(180deg);
+          transform: translate(700%, 400%) rotate(180deg);
+}
+
+.cpPositon85--reverse {
+  -webkit-transform: translate(700%, 300%) rotate(180deg);
+          transform: translate(700%, 300%) rotate(180deg);
+}
+
+.cpPositon86--reverse {
+  -webkit-transform: translate(700%, 200%) rotate(180deg);
+          transform: translate(700%, 200%) rotate(180deg);
+}
+
+.cpPositon87--reverse {
+  -webkit-transform: translate(700%, 100%) rotate(180deg);
+          transform: translate(700%, 100%) rotate(180deg);
+}
+
+.cpPositon88--reverse {
+  -webkit-transform: translate(700%, 0%) rotate(180deg);
+          transform: translate(700%, 0%) rotate(180deg);
+}
+/*# sourceMappingURL=ChessBoard.css.map */

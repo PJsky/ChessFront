@@ -1,0 +1,26 @@
+@import "./ChessBoard/ChessBoard.css";
+@import "./Header/header.css";
+@import "./GameOnList/GameOnList.css";
+@import "./LoginPage/LoginPage.css";
+@import "./RegisterPage/RegisterPage.css";
+@import "./Gameroom/Gameroom.css";
+@import "./MainPage/MainPage.css";
+@import "./Shared/Shared.css";
+@import "./FriendPanel/FriendPanel.css";
+@import "./HistoryFeed/HistoryFeed.css";
+@import "./Lookup/Lookup.css";
+@import "./Modals/NewGameModal/NewGameModal.css";
+@import "./Modals/WinnerModal/WinnerModal.css";
+
+body{
+    background-color: #eee;
+}
+
+.App{
+    width: 100%;
+    min-width: fit-content;
+}
+
+.global__hidden{
+    visibility: hidden;
+}

@@ -1,0 +1,119 @@
+body {
+  background-color: #eee;
+}
+
+.global__hidden {
+  visibility: hidden !important;
+}
+
+.lookup__card {
+  background: white;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  max-width: 500px;
+  max-height: 400px;
+  -webkit-box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 0.75);
+  margin: 70px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+.person {
+  border: 1px solid #0003;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.person:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.person:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.person__upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 10%;
+}
+
+.person__upper button {
+  border: none;
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-style: bold;
+  font-size: 1.1em;
+  margin-right: 5%;
+  background-color: #2e81f4;
+  color: white;
+}
+
+.person__upper button:hover {
+  cursor: pointer;
+  background-color: #3a89ff;
+}
+
+.person__upper button:focus {
+  outline: none;
+}
+
+.person__upper .person__button--disabled {
+  background: #2e81f44d !important;
+}
+
+.person__identification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.person__identification .person__name {
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.personPanel__noone {
+  padding: 24px;
+  font-weight: 600;
+}
+
+.person__response {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.person__response .person__reject {
+  background-color: #ca4141;
+}
+
+.person__response .person__reject:hover {
+  background-color: #d64d4d;
+}
+/*# sourceMappingURL=Lookup.css.map */

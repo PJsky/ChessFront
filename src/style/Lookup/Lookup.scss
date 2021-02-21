@@ -1,0 +1,85 @@
+@import "../Shared/Shared.scss";
+
+.lookup__card{
+    background: $main-accent-color;
+    min-width: fit-content;
+    max-width: 500px;
+    max-height: 400px;
+    box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.75);
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.person{
+    border: 1px solid #0003;
+    display: flex;
+    flex-direction: column;
+    &:last-child{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    &:first-child{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
+
+.person__upper{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 10%;
+
+    button{
+        border: none;
+        padding: 8px 24px;
+        border-radius: 5px;
+        font-style: bold;
+        font-size: 1.1em;
+        margin-right: 5%;
+        background-color: $main-color;
+        color: $main-accent-color;
+        &:hover{
+            cursor: pointer;
+            background-color: $main-color-lighter;
+        }
+
+        &:focus{
+            outline: none;
+        }
+    } 
+
+    .person__button--disabled{
+        background: $main-color-disabled !important;
+    }
+}
+
+.person__identification{
+    display: flex;
+    justify-content: space-evenly;
+    
+    .person__name{
+        padding: 8px 12px;
+        font-weight: 600;
+    }
+}
+
+.personPanel__noone{
+    padding: 24px;
+    font-weight: 600;
+}
+
+.person__response{
+    display: flex;
+    height: fit-content;
+
+    .person__reject{
+        background-color: rgb(202, 65, 65);
+
+        &:hover{
+            background-color: rgb(214, 77, 77);
+        }
+    }
+}

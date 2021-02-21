@@ -1,0 +1,52 @@
+@import "../../Shared/Shared.scss";
+
+.winnerModal__name{
+    display: block;
+    padding: 48px 48px 24px 48px;
+    font-size: 1.2em;
+}
+
+.winnerModal__quit{
+    background-color: $reject-color;
+    color: $main-accent-color;
+    &:hover{
+        cursor: pointer;
+        background-color: $reject-color-lighter;
+    }
+
+    &:focus{
+        outline: none;
+    }
+} 
+
+.winnerModal__rewatch{
+    background-color: $main-color;
+        color: $main-accent-color;
+        &:hover{
+            cursor: pointer;
+            background-color: $main-color-lighter;
+        }
+
+        &:focus{
+            outline: none;
+        }
+}
+
+.winnerModal__buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 24px 48px 24px;
+    // margin-bottom: 48px;
+    button{
+        border: none;
+        padding: 8px 24px;
+        border-radius: 5px;
+        font-style: bold;
+        font-size: 1.1em;
+        
+    }
+}
+
+.winnerModal__winner{
+    font-weight: bold;
+}

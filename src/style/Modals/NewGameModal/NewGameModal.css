@@ -1,0 +1,102 @@
+body {
+  background-color: #eee;
+}
+
+.global__hidden {
+  visibility: hidden !important;
+}
+
+.newGameModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 1000;
+}
+
+.newGameModal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000088;
+}
+
+.newGameModal__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.newGameModal__close .newGameModal__closeButton {
+  padding: 12px;
+  height: 0;
+}
+
+.newGameModal__close .newGameModal__closeButton:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.newGameModal__form {
+  padding: 28px 24px 48px 24px;
+}
+
+.newGameModal__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.newGameModal__form form * {
+  padding: 8px;
+  margin: 4px auto;
+  border-radius: 5px;
+  border: 0;
+}
+
+.newGameModal__form form button {
+  background-color: #2e81f4;
+  color: white;
+  font-weight: 600;
+  width: 80%;
+}
+
+.newGameModal__form form button:hover {
+  cursor: pointer;
+  background-repeat: #3a89ff;
+}
+
+.newGameModal__form form button:focus {
+  outline: none;
+}
+
+.newGameModal__form form input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.newGameModal__form form input:focus {
+  outline: none;
+}
+/*# sourceMappingURL=NewGameModal.css.map */
