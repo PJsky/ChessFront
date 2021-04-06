@@ -19,7 +19,7 @@ import HistoryFeed from './components/HistoryFeed';
 import PrivateRoute from './components/NavigationHelper/PrivateRoute';
 
 // global.BACKEND = "http://localhost:51463";
-global.BACKEND = "https://pjskybackend.pl";
+global.BACKEND = "https://www.pjskybackend.pl";
 
 
 const App = () => {
