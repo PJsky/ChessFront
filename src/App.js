@@ -24,16 +24,6 @@ global.BACKEND = "https://www.pjskybackend.pl";
 
 const App = () => {
   
-  
-
-  // let originalSet = localStorage.setItem;
-  // localStorage.setItem = function(key, value) {
-  //   var event = new Event('itemSet');
-  //   event.value = value;
-  //   event.key = key;
-  //   originalSet.apply(this, arguments);
-  //   document.dispatchEvent(event);
-  // };
   const isLogged = useSelector(state => state.logged_in); 
   const dispatch = useDispatch();
   window.addEventListener("storage",()=>{IsLoggedIn()},false);

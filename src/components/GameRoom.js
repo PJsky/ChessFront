@@ -113,7 +113,7 @@ const GameRoom = (props) => {
                           reverse={localStorage.getItem("username")==players.p2?true:false}
                           />
             </div>
-            <button onClick={()=>{saveGame()}}>Save game</button>
+            {/* <button onClick={()=>{saveGame()}}>Save game</button> */}
             <WinnerModal 
             open={isWinnerModalOpen} 
             onClose={()=>{setIsWinnerModalOpen(false)}}

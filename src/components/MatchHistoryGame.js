@@ -130,10 +130,6 @@ const MatchHistoryGame = (props) => {
                           step={currentMoveStep}
                           />
             </div>
-            {/* <div>
-                <button onClick={()=>{prevMove()}}>prev</button>
-                <button onClick={()=>{nextMove()}}>next</button>
-            </div> */}
             <WinnerModal 
             open={isWinnerModalOpen}
             onClose={()=>{setIsWinnerModalOpen(false)}}
